@@ -110,7 +110,7 @@ function databaseSample(req, sendword) {
     var r = result.rows[randomId];
     // 全角数字を半角数字に変換
     sendword = number_em_en_replace(sendword);
-    // 問題の答えを一件取得する
+    // 問題の答えを一件取得するためのID取得
     var question_id = Number(sendword.slice(2));
     var r_id = result.rows[question_id - 1];
     
